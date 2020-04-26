@@ -10,6 +10,6 @@ docker push kanishka3000/multi-worker:latest
 docker push kanishka3000/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=stephengrider/multi-server:$SHA
-kubectl set image deployments/client-deployment client=stephengrider/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=stephengrider/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=kanishka3000/multi-server:$SHA
+kubectl set image deployments/client-deployment client=kanishka3000/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=kanishka3000/multi-worker:$SHA
